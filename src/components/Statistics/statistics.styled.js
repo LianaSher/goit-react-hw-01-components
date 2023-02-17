@@ -3,6 +3,7 @@ import styled from 'styled-components';
 export const Section = styled.section`
   display: inline-block;
   background-color: white;
+  margin-bottom: 60px;
 `;
 
 export const Title = styled.h2`
