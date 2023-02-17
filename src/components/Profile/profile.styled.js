@@ -1,4 +1,6 @@
-.profile {
+import styled from 'styled-components';
+
+export const Card = styled.div`
   width: 260px;
   height: 340px;
   background-color: whitesmoke;
@@ -6,46 +8,45 @@
   border-radius: 6px;
   border: 0.1px solid #c0c0c0;
   margin-bottom: 60px;
-}
+`;
 
-.description {
+export const Description = styled.div`
   padding: 30px;
   text-align: center;
-}
-
-.userImg {
-  margin: 0 auto;
-  margin-bottom: 20px;
-}
-
-.name {
   font-size: 25px;
   font-weight: 600;
   color: black;
-
   margin-bottom: 15px;
-}
+`;
 
-.tagName {
+export const Image = styled.img`
+  margin: 0 auto;
+  margin-bottom: 20px;
+`;
+
+export const Name = styled.p`
+  margin-bottom: 15px;
+`;
+export const Tag = styled.p`
   font-size: 18px;
   color: dimgrey;
-  font-weight: 600;
-
   margin-bottom: 10px;
-}
-.locationCity {
-  composes: tagName;
-}
-.stats {
+`;
+
+export const Location = styled.p`
+  font-size: 18px;
+`;
+
+export const List = styled.ul`
   list-style: none;
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
   background-color: gainsboro;
-}
+`;
 
-.statsItem {
+export const Item = styled.li`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -53,17 +54,10 @@
   flex-basis: calc(100% / 3);
   border: 0.1px solid #c0c0c0;
   height: 84px;
-}
-.label {
-  composes: tagName;
+`;
+export const Label = styled.span`
   display: block;
   font-size: 15px;
   margin-bottom: 5px;
   text-align: center;
-}
-.quantity {
-  composes: label;
-  color: black;
-  font-size: 18px;
-  font-weight: 700;
-}
+`;
