@@ -38,7 +38,6 @@ export const Location = styled.p`
 `;
 
 export const List = styled.ul`
-  list-style: none;
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
