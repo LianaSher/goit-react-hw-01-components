@@ -1,6 +1,6 @@
 
 import PropTypes from "prop-types";
-import { Card, Description, Image, Name, Tag, Location, List, Item, Label } from "./profile.styled";
+import { Card, Description, Image, Name, Tag, Location, List, Item, Label, Value } from "./profile.styled";
 
 
 
@@ -15,13 +15,13 @@ export const Profile = ({ username, tag, location, avatar, stats: { followers, v
         </Description>
         <List>
             <Item><Label>followers</Label>
-                <span>{followers}</span>
+                <Value>{followers}</Value>
             </Item>
             <Item><Label>views</Label>
-                <span>{views}</span>
+                <Value>{views}</Value>
             </Item>
             <Item><Label>likes</Label>
-                <span>{likes}</span>
+                <Value>{likes}</Value>
             </Item>
         </List>
     </Card>)

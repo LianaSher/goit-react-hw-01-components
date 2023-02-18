@@ -21,6 +21,7 @@ export const List = styled.ul`
   display: flex;
   flex-direction: column;
   gap: 8px;
+  margin-bottom: 60px;
 `;
 
 export const Status = styled.span`
